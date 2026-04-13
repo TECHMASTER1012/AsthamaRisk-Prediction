@@ -1,0 +1,5 @@
+# Frontend dependencies
+streamlit
+plotly
+pandas
+requests

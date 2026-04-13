@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+env/
+venv/
+
+# Environment
+.env
+*.env
+
+# Database
+*.db
+*.sqlite3
+
+# ML Artifacts
+ml_pipeline/data/
+*.tflite
+*.keras
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
