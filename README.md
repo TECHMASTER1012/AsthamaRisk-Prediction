@@ -4,7 +4,7 @@ A full-stack, real-time asthma risk monitoring platform combining **IoT edge int
 
 ---
 
-## 🏗️ System Architecture
+## System Architecture
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
@@ -28,7 +28,7 @@ A full-stack, real-time asthma risk monitoring platform combining **IoT edge int
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 Sensors_Project/
@@ -73,7 +73,7 @@ Sensors_Project/
 
 ---
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### 1. Clone & Set Up Virtual Environment
 
@@ -128,7 +128,7 @@ python simulator.py --patient 1 --server http://127.0.0.1:8000
 
 ---
 
-## 🤖 ML Pipeline (Re-training)
+## ML Pipeline (Re-training)
 
 To retrain the TinyML model and regenerate firmware files:
 
@@ -146,7 +146,7 @@ This will:
 
 ---
 
-## ⚡ ESP32 Firmware Setup
+## ESP32 Firmware Setup
 
 ### Arduino Library Dependencies
 Install via Arduino Library Manager:
@@ -174,7 +174,7 @@ float feature_scales[7] = { ... };
 
 ---
 
-## 🔑 Key Features
+## Key Features
 
 | Feature | Details |
 |---|---|
@@ -187,22 +187,22 @@ float feature_scales[7] = { ... };
 
 ---
 
-## 🌐 API Endpoints
+## API Endpoints
 
 | Method | Endpoint | Auth | Description |
 |---|---|---|---|
-| `POST` | `/auth/register` | ❌ | Register a new clinician account |
-| `POST` | `/auth/token` | ❌ | Login — returns JWT token |
-| `GET` | `/auth/me` | ✅ | Get current user info |
-| `POST` | `/api/patients` | ✅ | Register a new patient |
-| `GET` | `/api/patients` | ✅ | List all patients for this user |
-| `GET` | `/api/patients/{id}/history` | ✅ | Sensor reading history |
-| `GET` | `/api/patients/{id}/alerts` | ✅ | Alert log for patient |
-| `POST` | `/api/sensors/ingest` | ❌ | ESP32 data ingestion (no auth) |
+| `POST` | `/auth/register` | Register a new clinician account |
+| `POST` | `/auth/token`  Login — returns JWT token |
+| `GET` | `/auth/me` | Get current user info |
+| `POST` | `/api/patients` | Register a new patient |
+| `GET` | `/api/patients` | List all patients for this user |
+| `GET` | `/api/patients/{id}/history` | Sensor reading history |
+| `GET` | `/api/patients/{id}/alerts` |Alert log for patient |
+| `POST` | `/api/sensors/ingest` |ESP32 data ingestion (no auth) |
 
 ---
 
-## 📱 SMS Alert Configuration
+## SMS Alert Configuration
 
 1. Sign up at [twilio.com](https://www.twilio.com)
 2. Get a Twilio phone number
